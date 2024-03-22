@@ -74,6 +74,7 @@ const ShowBgImg = (msg) => {
     else if(msg == "rain" || msg == 'Patchy rain nearby') body.classList.add("rain");
     else if(msg == "Light rain shower") body.classList.add("Light-rain");
     else if(msg == "Moderate or heavy rain with thunder") body.classList.add("heavy-rain");
+    else if(msg == "Thundery outbreaks in nearby") body.classList.add("heavy-rain");
     else if(msg == "light-snow" || msg == "Heavy snow") body.classList.add("light-snow");
     else if(msg == "Heavy snow") body.classList.add("Heavy-snow");
     else if(msg == "Mist" || msg == 'fog') body.classList.add("Mist");// 
