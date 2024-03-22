@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: rgba(50, 96, 196, 0.968);
+    background-size: cover;
+    background-position: center;
+}
+
+.dark {
+    background-color: white;
+}
+
+.c,
+.f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5vmax;
+    width: 3.5vmax;
+    border-radius: 50%;
+    margin-right: 1vmax;
+    font-size: 1.3vmax;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.time {
+    font-size: 1.6vmax;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.main-box {
+    background-color: rgba(52, 52, 192, 0.681);
+    border-radius: 1em;
+    box-shadow: -0.4em 0.4em 20px 5px white inset;
+}
+
+.img-box img {
+    height: 12vmax;
+    width: 12vmax;
+}
+
+.main-box div div i {
+    font-size: 1.2em;
+}
+
+#temp {
+    font-size: 6vmax;
+}
+
+.weather {
+    align-items: center;
+}
+
+iframe {
+    height: 60vh;
+    width: 100%;
+    opacity: 0.8;
+    margin-top: 3em;
+}
+
+.other-info div {
+    background-color: rgba(255, 255, 255, 0.071);
+}
+
+.Sunny {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/033/352/730/small/sunny-sky-background-sunny-day-background-sun-wallpaper-sunny-sky-landscape-blue-sky-background-summer-sky-background-ai-generative-photo.jpg");
+}
+
+.Cloudy {
+    background-image: url('https://media.baamboozle.com/uploads/images/614778/e086b5a7-46d3-47ff-af3e-3cd0c9f4751e.gif');
+}
+
+.rain {
+    background-image: url('https://i.pinimg.com/originals/0a/35/0b/0a350ba3bce0146adcfcf700899e4e90.gif');
+}
+
+.light-snow {
+    background-image: url('https://31.media.tumblr.com/tumblr_mc2ehh5ZBu1rw1he8o1_500.gif');
+}
+
+.Mist {
+    background-image: url('https://i.gifer.com/IJNs.gif');
+}
+
+.PartlyCloudy {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230609/pngtree-view-of-clouds-in-blue-skies-image_2949389.jpg');
+}
+
+.Heavy-snow{
+    background-image: url('https://i.pinimg.com/originals/e2/9e/3f/e29e3fe73b2f01e990e7b28e082690eb.gif');
+}
+
+.heavy-rain{
+    background-image: url('https://media.tenor.com/6de-2dIt8RsAAAAM/storm-coming.gif');
+}
+
+.Light-rain{
+    background-image: url('https://phoneky.co.uk/thumbs/screensavers/down/places/rainshower_x9l93pqz.gif');
+}
