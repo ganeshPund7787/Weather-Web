@@ -42,12 +42,15 @@ const fetchData = async (data) => {
         alert(result.error.message);
     } else {
         showTemp(result);
+        let speech = new SpeechSynthesisUtterance();
+        speech.text = locations.innerHTML;
+        window.speechSynthesis.speak(speech);
     }
     input.value = "";
 }
 
 const showTemp = (result) => {
-    msg_text.innerHTML= "";
+    msg_text.innerHTML = "";
     if (c_sym.classList.contains("bg-dark")) {
         temp.innerHTML = result.current.temp_c + " C";
         fills_l.innerHTML = result.current.feelslike_c + " c";
@@ -68,18 +71,19 @@ const showTemp = (result) => {
 }
 const ShowBgImg = (msg) => {
     body.classList.remove(body.classList.item(0));// for Next change Img remove
-    
+
     if (msg == "Sunny") body.classList.add("Sunny");
-    else if(msg == "Cloudy" || msg == "Overcast")  body.classList.add("Cloudy");
-    else if(msg == "rain" || msg == 'Light drizzle') body.classList.add("rain");
-    else if(msg == "Light rain shower") body.classList.add("Light-rain");
-    else if(msg == "Moderate or heavy rain with thunder") body.classList.add("heavy-rain");
-    else if(msg == "Thundery outbreaks in nearby") body.classList.add("heavy-rain");
-    else if(msg == "light-snow" || msg == "Heavy snow") body.classList.add("light-snow");
-    else if(msg == "Heavy snow") body.classList.add("Heavy-snow");
-    else if(msg == "Mist" || msg == 'fog') body.classList.add("Mist");// 
-    else if(msg == "Partly cloudy" || msg == 'Partly Cloudy') body.classList.add("PartlyCloudy");
-    else if(msg == 'Patchy rain nearby') body.classList.add("SunRain");
+    else if (msg == "Cloudy" || msg == "Overcast") body.classList.add("Cloudy");
+    else if (msg == "rain" || msg == 'Light drizzle') body.classList.add("rain");
+    else if (msg == "Light rain shower") body.classList.add("Light-rain");
+    else if (msg == "Moderate or heavy rain with thunder") body.classList.add("heavy-rain");
+    else if (msg == "Thundery outbreaks in nearby") body.classList.add("heavy-rain");
+    else if (msg == "light-snow" || msg == "Heavy snow") body.classList.add("light-snow");
+    else if (msg == "Heavy snow") body.classList.add("Heavy-snow");
+    else if (msg == "Mist" || msg == 'fog') body.classList.add("Mist");// 
+    else if (msg == "Partly cloudy" || msg == 'Partly Cloudy') body.classList.add("PartlyCloudy");
+    else if (msg == 'Patchy rain nearby') body.classList.add("SunRain");
+
 }
 
 
